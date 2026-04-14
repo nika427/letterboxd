@@ -87,7 +87,7 @@ import { AddActorRequestModel, ActorDto } from '../../models/actor.model';
 
       <!-- Users Tab -->
       <div class="tab-content" *ngIf="activeTab === 'users'">
-        <div class="data-list">
+        <div class="data-list full-width">
           <h3>All Users</h3>
           <table class="user-table">
             <thead>
@@ -274,6 +274,9 @@ import { AddActorRequestModel, ActorDto } from '../../models/actor.model';
       width: 100%;
       border-collapse: collapse;
       overflow-x: visible;
+    }
+    .data-list.full-width {
+      grid-column: 1 / -1;
     }
     .user-table th, .user-table td {
       padding: 0.75rem;
